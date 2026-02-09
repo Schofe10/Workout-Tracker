@@ -103,6 +103,12 @@
     .workout-label-input input::placeholder { color: #64748b; text-transform: none; }
     #workoutDate { text-transform: none; font-weight: 600; }
 
+    #workoutDate {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+    
     .workout-label-display {
       padding: 0.5rem 1rem;
       border-radius: 0.5rem;
@@ -488,9 +494,9 @@
       <div class="form-grid">
         <input type="text" id="exerciseName" placeholder="Exercise name (e.g., Bench Press)" oninput="checkLastPerformance()">
         <div class="input-row">
-          <input type="number" id="sets" placeholder="Sets (optional)" inputmode="numeric">
-          <input type="number" id="reps" placeholder="Reps (optional)" inputmode="numeric">
-          <input type="number" id="weight" placeholder="Weight (optional)" inputmode="decimal">
+          <input type="number" id="sets" placeholder="Sets" inputmode="numeric">
+          <input type="number" id="reps" placeholder="Reps" inputmode="numeric">
+          <input type="number" id="weight" placeholder="Weight" inputmode="decimal">
         </div>
         <button class="btn-primary" onclick="addExercise()">➕ Add Exercise</button>
         <div class="muted">You can add sets later per-exercise (recommended). If you enter Sets/Reps/Weight here, it will auto-create that many set rows.</div>
